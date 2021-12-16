@@ -1,0 +1,44 @@
+.hero-section {
+  max-width: 1600px;
+  min-height: 600px;
+  margin: 0 auto;
+
+  background-color: var(--background-main-section-studio-and-footer);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bg-img.jpg);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+.hero-section-title {
+  color: var(--white-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  max-width: 696px;
+  padding-bottom: 30px;
+  margin: 0 auto;
+}
+.open-modal-button {
+  display: inline-block;
+  border-radius: 4px;
+  min-width: 200px;
+  padding: 10px 32px;
+  border: none;
+  color: var(--white-text-color);
+  background-color: var(--accent);
+
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  text-align: center;
+}
