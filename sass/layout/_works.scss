@@ -6,25 +6,25 @@
 .works-list {
   display: flex;
   margin-right: -30px;
-}
-.works-list__item {
-  margin-right: 30px;
-  width: 370px;
-  position: relative;
-  overflow: hidden;
-}
-.works-list__text {
-  @include font(700, 14px, 1.14, 0.03em);
-  text-transform: uppercase;
-  color: var(--white-text-color);
-  width: 370px;
-  height: 70px;
+  &__item {
+    margin-right: 30px;
+    width: 370px;
+    position: relative;
+    overflow: hidden;
+  }
+  &__text {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+    color: var(--white-text-color);
+    width: 370px;
+    height: 70px;
 
-  position: absolute;
-  bottom: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(47, 48, 58, 0.8);
-  padding: 27px 0px;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding: 27px 0px;
+  }
 }
