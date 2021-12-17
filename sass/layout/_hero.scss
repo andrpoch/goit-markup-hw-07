@@ -15,11 +15,7 @@
 }
 .hero-section-title {
   color: var(--white-text-color);
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-
-  letter-spacing: 0.06em;
+  @include font(900, 44px, 1.36, 0.06em);
   text-transform: uppercase;
 
   max-width: 696px;
@@ -36,9 +32,6 @@
   background-color: var(--accent);
 
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
+  @include font(700, 16px, 1.87, 0.06em);
   text-align: center;
 }

@@ -2,12 +2,8 @@
   padding: 94px 0px;
 }
 .clients-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  @include font(700, 36px, 1.16, 00.03em);
   text-align: center;
-  letter-spacing: 0.03em;
-
   margin-bottom: 50px;
 }
 .clients-list {
