@@ -1,4 +1,4 @@
-.command-section {
+.command {
   background-color: var(--background-section-command-and-button-portfolio);
   padding-top: 94px;
   padding-bottom: 94px;
@@ -7,16 +7,16 @@
 .command-list {
   display: flex;
   flex-wrap: wrap;
-}
-.command-people {
-  background-color: var(--white-text-color);
-  width: 270px;
-  margin-right: 30px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 0px 0px 4px 4px;
-  &:last-child {
-    margin-right: 0px;
+  &__people {
+    background-color: var(--white-text-color);
+    width: 270px;
+    margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    &:last-child {
+      margin-right: 0px;
+    }
   }
 }
 .command-container {
@@ -33,36 +33,4 @@
   @include font(400, 16px, 1.18, 0.03);
 
   margin-bottom: 16px;
-}
-.command-social-list {
-  display: flex;
-  justify-content: center;
-}
-.command-social-item {
-  margin-right: 10px;
-  &:last-child {
-    margin-right: 0px;
-  }
-}
-.command-social-link {
-  width: 44px;
-  height: 44px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  &:hover,
-  &:focus {
-    background-color: var(--accent);
-  }
-  &:hover svg,
-  &:focus svg {
-    fill: var(--white-text-color);
-  }
-}
-.command-social-icon {
-  fill: var(--icon-color);
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

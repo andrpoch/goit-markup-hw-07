@@ -22,29 +22,30 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="header-section">
+      <header class="header">
       <div class="container">
         <nav class="nav-container">
-          <a class="logo-header" href="./index.html"><span class="accent-blue">Web</span>Studio</a>
-          <ul class="nav-section">
-            <li class="nav-list"><a class="link-header" href="./index.html">Студия</a></li>
-            <li class="nav-list">
-              <a class="link-header active" href="./portfolio.html">Портфолио</a>
-            </li>
-            <li class="nav-list"><a class="link-header" href="">Контакты</a></li>
+          <a class="nav-container__logo" href="./index.html"><span class="accent-blue">Web</span>Studio</a>
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link " href="./index.html">Студия</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-list__link_active" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="">Контакты</a></li>
           </ul>
-          <ul class="contacts-section">
-            <li class="contacts-items">
-              <a class="adress-header link-header" href="mailto:info@devstudio.com">
-                <svg class="header-icon" width="16" height="12">
+          <ul class="contacts">
+            <li class="contacts__items">
+              <a class="nav-list__link nav-list__link_text-col " href="mailto:info@devstudio.com">
+                <svg class="nav-list__icon" width="16" height="12">
                   <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
                 info@devstudio.com</a
               >
             </li>
             <li>
-              <a class="adress-header link-header" href="tel:+380961111111">
-                <svg class="header-icon" width="10" height="16">
+              <a class="nav-list__link nav-list__link_text-col" href="tel:+380961111111">
+                <svg class="nav-list__icon" width="10" height="16">
                   <use href="./images/icons.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11</a
@@ -58,16 +59,16 @@
       <section class="portfolio">
         <div class="container">
           <h1 class="visually-hidden">Портфолио</h1>
-          <ul class="btn-list">
-            <li class="btn-item"><button class="button" type="button">Все</button></li>
-            <li class="btn-item"><button class="button" type="button">Веб-сайты</button></li>
-            <li class="btn-item"><button class="button" type="button">Приложения</button></li>
-            <li class="btn-item"><button class="button" type="button">Дизайн</button></li>
-            <li class="btn-item"><button class="button" type="button">Маркетинг</button></li>
+          <ul class="menu-list">
+            <li class="menu-list__item"><button class="menu-list__button" type="button">Все</button></li>
+            <li class="menu-list__item"><button class="menu-list__button" type="button">Веб-сайты</button></li>
+            <li class="menu-list__item"><button class="menu-list__button" type="button">Приложения</button></li>
+            <li class="menu-list__item"><button class="menu-list__button" type="button">Дизайн</button></li>
+            <li class="menu-list__item"><button class="menu-list__button" type="button">Маркетинг</button></li>
           </ul>
 
           <ul class="portfolio-list">
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -88,7 +89,7 @@
                 </a>
               
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -109,7 +110,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -126,7 +127,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -143,7 +144,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -160,7 +161,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -181,7 +182,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -202,7 +203,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -219,7 +220,7 @@
                 </div>
               </a>
             </li>
-            <li class="portfolio-item">
+            <li class="portfolio-list__item">
               <div class="overlay-item">
                 <div class="overlay">
                   <p class="portfolio-overlay">
@@ -240,56 +241,55 @@
         </div>
       </section>
     </main>
-
-   <footer class="footer-section">
+    <footer class="footer">
       <div class="container">
-        <ul class="footer-info">
+        <ul class="footer-content">
           <li>
-            <a class="logo-footer" href="index.html"
+            <a class="footer-content__logo" href="index.html"
               ><span class="accent-blue">Web</span><span class="accent-white">Studio</span></a
             >
-            <ul class="footer-list">
-              <li class="footer-item">
-                <p class="home-adress">г. Киев, пр-т Леси Украинки, 26</p>
+            <ul class="footer-left-list">
+              <li class="footer-left-list__item">
+                <p class="footer-left-list__home-adress">г. Киев, пр-т Леси Украинки, 26</p>
               </li>
-              <li class="footer-item">
-                <a class="adress-footer link-footer" href="mailto:info@devstudio.com"
+              <li class="footer-left-list__item">
+                <a class="footer-left-list__link" href="mailto:info@devstudio.com"
                   >info@devstudio.com</a
                 >
               </li>
-              <li class="footer-item">
-                <a class="adress-footer link-footer" href="tel:+380961111111">+38 096 111 11 11</a>
+              <li class="footer-left-list__item">
+                <a class="footer-left-list__link" href="tel:+380961111111">+38 096 111 11 11</a>
               </li>
             </ul>
           </li>
           <li>
-            <div class="center-text">
-              <p>присоединяйтесь</p>
-              <ul class="footer-social-list">
-                <li class="footer-social-item">
-                  <a href="" class="footer-social-link">
-                    <svg class="footer-social-icon" width="20" height="20">
+            <div class="center-social">
+              <p class="center-social__text" >присоединяйтесь</p>
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link_bgc">
+                    <svg class="social-list__icon social-list__icon_fill" width="20" height="20">
                       <use href="./images/icons.svg#icon-instagram-2"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-social-item">
-                  <a href="" class="footer-social-link">
-                    <svg class="footer-social-icon" width="20" height="20">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link_bgc">
+                    <svg class="social-list__icon social-list__icon_fill" width="20" height="20">
                       <use href="./images/icons.svg#icon-twitter-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-social-item">
-                  <a href="" class="footer-social-link">
-                    <svg class="footer-social-icon" width="20" height="20">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link_bgc">
+                    <svg class="social-list__icon social-list__icon_fill" width="20" height="20">
                       <use href="./images/icons.svg#icon-facebook-1"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="footer-social-item">
-                  <a href="" class="footer-social-link">
-                    <svg class="footer-social-icon" width="20" height="20">
+                <li class="social-list__item">
+                  <a href="" class="social-list__link social-list__link_bgc">
+                    <svg class="social-list__icon social-list__icon_fill" width="20" height="20">
                       <use href="./images/icons.svg#icon-linkedin-1"></use>
                     </svg>
                   </a>
@@ -297,13 +297,13 @@
               </ul>
             </div>
           </li>
-          <li class="right-form">
+          <li class="right-subscribe">
             <form>
-              <p>Подпишитесь на рассылку</p>
-              <label class="footer-form-container">
-                <input class="footer-form" type="email" name="email" placeholder="E-mail" />
-                <button class="button-submit" type="submit">
-                  Подписаться<svg class="icon-send" width="24" height="24">
+              <p class="right-subscribe__text">Подпишитесь на рассылку</p>
+              <label class="right-subscribe__label">
+                <input class="right-subscribe__input" type="email" name="email" placeholder="E-mail" />
+                <button class="right-subscribe__btn-submit" type="submit">
+                  Подписаться<svg class="right-subscribe__icon-send" width="24" height="24">
                     <use href="./images/icons.svg#icon-icon-send"></use>
                   </svg>
                 </button>
