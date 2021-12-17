@@ -124,7 +124,7 @@
   border: none;
 }
 .check-text {
-  @include font(400, 14px, 1.71, 0, 03em);
+  @include font(400, 14px, 1.71, 0.03em);
   color: white;
   color: var(--fourth-text-color);
   display: flex;

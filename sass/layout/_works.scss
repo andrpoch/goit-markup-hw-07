@@ -1,4 +1,4 @@
-.works-section {
+.works {
   padding-top: 47px;
   padding-bottom: 94px;
 }
@@ -7,13 +7,13 @@
   display: flex;
   margin-right: -30px;
 }
-.works-items {
+.works-list__item {
   margin-right: 30px;
   width: 370px;
   position: relative;
   overflow: hidden;
 }
-.work-text {
+.works-list__text {
   @include font(700, 14px, 1.14, 0.03em);
   text-transform: uppercase;
   color: var(--white-text-color);
