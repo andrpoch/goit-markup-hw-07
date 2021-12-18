@@ -793,27 +793,27 @@ img {
   text-decoration: none;
 }
 
-.btn-list {
+.menu-list {
   display: flex;
   justify-content: center;
   margin-bottom: 56px;
 }
 
-.btn-list__item {
+.menu-list__item {
   margin-right: 8px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-list__item:last-child {
+.menu-list__item:last-child {
   margin-right: 0;
 }
 
-.btn-list__item:hover, .btn-list__item:focus {
+.menu-list__item:hover, .menu-list__item:focus {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
 }
 
-.btn-list__button {
+.menu-list__button {
   display: inline-block;
   margin: 0 auto;
   padding: 6px 22px;
@@ -828,7 +828,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn-list__button:hover, .btn-list__button:focus {
+.menu-list__button:hover, .menu-list__button:focus {
   display: inline-block;
   margin: 0 auto;
   padding: 6px 22px;
@@ -849,7 +849,7 @@ img {
   justify-content: space-between;
 }
 
-.portfolio-item {
+.portfolio-list__item {
   margin-bottom: 30px;
   background-color: var(--white-text-color);
   width: 370px;
@@ -857,15 +857,15 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-item:hover {
+.portfolio-list__item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio-item:nth-child(n + 7) {
+.portfolio-list__item:nth-child(n + 7) {
   margin-bottom: 0;
 }
 
-.overlay-item {
+.overlay {
   position: relative;
   width: 100%;
   height: 294px;
@@ -874,11 +874,11 @@ img {
   overflow: auto;
 }
 
-.overlay-item:hover .overlay {
+.overlay:hover .overlay__item {
   transform: translatey(0);
 }
 
-.overlay {
+.overlay__item {
   position: absolute;
   top: 0;
   left: 0;
@@ -889,7 +889,7 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.overlay > .portfolio-overlay {
+.overlay__item > .overlay__portfolio {
   padding: 63px 24px;
   font-weight: 400;
   font-size: 18px;
@@ -902,7 +902,7 @@ img {
   padding: 20px 24px;
 }
 
-.section-all-title {
+.portfolio-adout__title {
   margin-bottom: 4px;
   color: var(--main-text-color);
   font-weight: 700;
@@ -911,7 +911,7 @@ img {
   letter-spacing: 0.06em;
 }
 
-.section-all-text {
+.portfolio-adout__text {
   color: var(--secont-text-color);
   font-weight: 400;
   font-size: 16px;
